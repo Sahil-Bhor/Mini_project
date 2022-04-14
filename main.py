@@ -17,18 +17,19 @@ GREY = 128, 128, 128
 RED = 255, 0, 0
 GREEN = 0, 255, 0
 
-# SOUNDS
+# SOUNDS 
+# optional can uncomment 
 # BG_SOUND = pygame.mixer.Sound(
 #     '/Users/sahilbhor/LIfe/Python/pygame/Space_io/Assets/background.mp3')
 
 BG_SOUND = pygame.mixer.Sound(
-    '/Users/sahilbhor/LIfe/Python/pygame/Space_io/Assets/bg2.mp3')
+    'FILE_PATH/Assets/bg2.mp3')
 BG_SOUND.play(-1)
 
 BULLET_HIT_SOUND = pygame.mixer.Sound(
-    '/Users/sahilbhor/LIfe/Python/pygame/Space_io/Assets/laser_shot.wav')
+    'FILE_PATH/Assets/laser_shot.wav')
 BULLET_FIRE_SOUND = pygame.mixer.Sound(
-    '/Users/sahilbhor/LIfe/Python/pygame/Space_io/Assets/boom.mp3')
+    'FILE_PATH/Assets/boom.mp3')
 
 BORDER = pygame.Rect((WIDTH//2) - 1.5, 0, 5, HEIGHT)  # Partition
 
@@ -46,17 +47,17 @@ spaceship_width = 100
 spaceship_height = 90
 
 SPACE = pygame.transform.scale(pygame.image.load(
-    os.path.join('Space_io', 'Assets', 'space.png')), (WIDTH, HEIGHT))
+    os.path.join('FILE_NAME', 'Assets', 'space.png')), (WIDTH, HEIGHT))
 
 # Red spaceship
 red_spaceship_image = pygame.image.load(
-    os.path.join('Space_io', 'Assets', 'red_spaceship.png'))
+    os.path.join('FILE_NAME', 'Assets', 'red_spaceship.png'))
 red_spaceship = pygame.transform.rotate(pygame.transform.scale(
     red_spaceship_image, (spaceship_width, spaceship_height)), -90)
 
 # Green spaceship
 green_spaceship_image = pygame.image.load(
-    os.path.join('Space_io', 'Assets', 'green_spaceship.png'))
+    os.path.join('FILE_NAME', 'Assets', 'green_spaceship.png'))
 green_spaceship = pygame.transform.rotate(pygame.transform.scale(
     green_spaceship_image, (spaceship_width, spaceship_height)), 90)
 
